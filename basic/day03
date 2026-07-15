@@ -1,0 +1,50 @@
+
+// Day 03 - JavaScript Functions
+
+
+// Function Declaration
+function addNums(num1, num2) {
+    console.log(num1 + num2);
+}
+
+addNums(5, 4);
+
+
+// Function with Default Parameters
+function addNumsDefault(num1 = 1, num2 = 1) {
+    console.log(num1 + num2);
+}
+
+addNumsDefault(5, 4);
+addNumsDefault();
+
+
+// Function with Return Value
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
+
+console.log(addNumbers(10, 20));
+
+
+
+// Arrow Functions
+
+// Arrow Function with Two Parameters
+const add = (num1 = 1, num2 = 1) => {
+    return num1 + num2;
+};
+
+console.log(add(5, 4));
+
+
+// Short Arrow Function
+const addShort = (num1 = 1, num2 = 1) => num1 + num2;
+
+console.log(addShort(8, 2));
+
+
+// Arrow Function with One Parameter
+const addFive = num1 => num1 + 5;
+
+console.log(addFive(4));
